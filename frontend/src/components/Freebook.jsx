@@ -11,7 +11,7 @@ function Freebook() {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:4001/book");
+                const res = await axios.get("https://pageunlockbackend.onrender.com/book");
                 setBooks(res.data);
             } catch (error) {
                 console.error("Error fetching books:", error);
@@ -21,7 +21,7 @@ function Freebook() {
     }, []);
 
     const filterData = books.filter((data) => data.category === "Free");
-    console.log(filterData);
+   
 
     const settings = {
         dots: true,
