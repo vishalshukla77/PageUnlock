@@ -18,8 +18,8 @@ function Login() {
     };
 
     try {
-      const res = await axios.post("http://localhost:4001/user/login", userInfo);
-      console.log(res.data);
+      const res = await axios.post("https://pageunlockbackend.onrender.com/user/login", userInfo);
+     
       if (res.data) {
         toast.success("Logged in successfully"); // Use toast for success message
         document.getElementById("my_modal_3").close()
