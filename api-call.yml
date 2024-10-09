@@ -16,6 +16,5 @@ jobs:
       - name: Call API
         run: |
           curl -X POST https://food-delivery-web-pvcg.onrender.com/ \
-          -H "Authorization: Bearer ${{ secrets.API_TOKEN }}" \
           -H "Content-Type: application/json" \
           -d '{"key": "value"}'
