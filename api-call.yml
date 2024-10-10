@@ -15,6 +15,6 @@ jobs:
 
       - name: Call API
         run: |
-          curl -X POST https://food-delivery-web-pvcg.onrender.com/ \
+          curl -X POST https://pageunlockbackend.onrender.com \
           -H "Content-Type: application/json" \
           -d '{"key": "value"}'
